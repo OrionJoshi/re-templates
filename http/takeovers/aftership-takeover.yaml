@@ -4,8 +4,11 @@ info:
   name: Aftership - Subdomain Takeover Detection
   author: pdteam
   severity: high
-  description: Aftership subdomain takeover was detected.
-  reference:
+  description: |
+    This vulnerability allows attackers to potentially hijack unused subdomains within the Aftership platform. 
+    An attacker could host malicious content, such as phishing pages on the compromised subdomain, and trick users into revealing personal information.
+  remediation: Conduct regular scans to find unused or inactive subdomains within the Aftership platform and reclaim control of these subdomains by updating DNS records or server configurations to prevent unauthorized access.
+  reference: 
     - https://github.com/EdOverflow/can-i-take-over-xyz
   metadata:
     max-request: 1
@@ -25,5 +28,5 @@ http:
       - type: word
         words:
           - Oops.</h2><p class="text-muted text-tight">The page you're looking for doesn't exist.
-
-# digest: 490a004630440220222d1eb4e6f6121f15f5bc09566c05a04be84da680f71151b9a0217d13854d4b022066636a5d0f9d9541086bec1f1a65690fb36c5586c1735868842af4a0c58eaee5:922c64590222798bb761d5b6d8e72950
+          
+# rewritten by Orion on 2024/03/28
