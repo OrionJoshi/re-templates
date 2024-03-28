@@ -1,10 +1,13 @@
 id: agilecrm-takeover
 
 info:
-  name: AgileCRM Takeover Detection
+  name: AgileCRM Subdomain Takeover Detection
   author: pdteam
   severity: high
-  description: agilecrm subdomain takeover was detected.
+  description: |
+    It involves the potential for attackers to take control of unused subdomains within the AgileCRM platform.
+    An attacker can claim and control the victim’s subdomain if this vulnerability is successfully exploited and could lead to reputational damage, financial loss, and potential legal consequences.
+  remediation: Conduct regular scans to identify subdomains within the AgileCRM platform that are inactive and reclaim or remove control of these subdomains by updating DNS records or server configurations to prevent unauthorized access
   reference:
     - https://github.com/EdOverflow/can-i-take-over-xyz/issues/145
   metadata:
@@ -26,4 +29,4 @@ http:
         words:
           - Sorry, this page is no longer available.
 
-# digest: 4a0a00473045022100df8d7f10e37c0ea9ad8a43cad43285d174c0a517c03a1edd9acadc1c33996b3e022020a8458c4c9b14fcb69b1b580d4cd1df4b3978b8b02092699f8cced34099e500:922c64590222798bb761d5b6d8e72950
+# rewritten by Orion on 2024/03/28
